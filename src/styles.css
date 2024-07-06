@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --white: #fafafa;
+    --black: #121212;
+    --lightblack: #212121;
+    --blue: #023e8a;
+    --lightblue: #5eecbf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+nav {
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 24px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.nav-links {
+    margin-left: auto;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.1s ease-out;
+}
+
+.nav-links li a:hover {
+    color: var(--lightblue);
+}
+
+#about {
+    background-image: linear-gradient(to bottom, var(--blue), var(--black));
+    text-align: center;
+    padding: 100px;
+}
+
+#about h1 {
+    font-size: 40px;
+}
+
+#about p {
+    margin-bottom: 20px;
+}
+
+#about a {
+    background-color: var(--black);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.1s ease-out;
+}
+
+#about a:hover {
+    color: var(--lightblue);
+    border-radius: 15px;
+}
+
+#info {
+    text-align: center;
+}
+
+#info h2 {
+    margin-top: 50px;
+}
+
+#info ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.info-card {
+    background-color: var(--lightblack);
+    color: var(--white);
+    border-radius: 12px;
+    margin: 20px;
+    padding: 30px;
+}
+
+.info-card i {
+    font-size: 40px;
+}
+
+.info-card p {
+    margin-top: 5px;
+}
+
+#projects {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 40px;
+}
+
+.project-card {
+    height: 600px;
+    padding: 15px;
+    margin: 35px 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-card img {
+    object-fit: cover;
+    width: 700px;
+}
+
+.project-card div {
+    background-image: linear-gradient(to top left, var(--blue), var(--lightblack));
+    display: grid;
+    padding: 40px;
+    width: 600px;
+}
+
+.project-card div h3 {
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.project-card div p {
+    padding: 10px 35px;
+    text-align: left;
+    font-size: 115%;
+}
+
+.project-card div a {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: 0.1s ease-out;
+}
+
+.project-card div a:hover {
+    color: var(--lightblue);
+    border-radius: 40px;
+}
+
+#soon {
+    background-image: linear-gradient(to bottom, var(--black), var(--blue));
+    font-size: 30px;
+    padding: 50px;
+    text-align: center;
+}
+
+#contact {
+    padding: 30px;
+    background-color: var(--blue);
+    text-align: right;
+}
+
+#contact li {
+    list-style: none;
+}
