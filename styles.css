@@ -194,3 +194,7 @@ nav {
 #contact li {
     list-style: none;
 }
+
+#contact li a {
+    color: var(--white);
+}
