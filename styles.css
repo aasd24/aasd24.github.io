@@ -141,34 +141,37 @@ nav {
 
 .project-card img {
     object-fit: cover;
-    width: 700px;
+    max-height: 100%;
+    width: 130%;
 }
 
 .project-card div {
     background-image: linear-gradient(to top left, var(--blue), var(--lightblack));
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 40px;
-    width: 600px;
+    width: 100%;
 }
 
-.project-card div h3 {
-    font-size: 50px;
-    line-height: 60px;
+.project-card-details h3 {
+    font-size: 2.5vw;
+    line-height: 3vw;
 }
 
-.project-card div p {
-    padding: 10px 35px;
+.project-card-details p {
+    padding: 10% 5%;
     text-align: left;
-    font-size: 115%;
+    font-size: 1vw;
 }
 
-.project-card div a {
+.project-card-details a {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     height: 100px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 2vw;
     color: var(--white);
     background-color: var(--black);
     border-radius: 50px;
@@ -180,6 +183,32 @@ nav {
 .project-card div a:hover {
     color: var(--lightblue);
     border-radius: 40px;
+}
+
+@media(orientation: portrait) {
+    .project-card {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        margin: 150px 5%;
+    }
+
+    .project-card img {
+        width: 100%;
+    }
+
+    .project-card-details h3 {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    .project-card-details p {
+        font-size: 2vw;
+    }
+
+    .project-card-details a {
+        font-size: 3vw;
+    }
 }
 
 #soon {
