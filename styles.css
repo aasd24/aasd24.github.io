@@ -54,6 +54,7 @@ nav {
 }
 
 .nav-links li a {
+    text-align: right;
     text-decoration: none;
     color: white;
     transition: 0.1s ease-out;
@@ -99,10 +100,15 @@ nav {
     margin-top: 50px;
 }
 
+#info > p {
+    margin: 0 5%;
+}
+
 #info ul {
     list-style: none;
     display: inline-flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .info-card {
@@ -119,7 +125,7 @@ nav {
 
 .info-card p {
     font-weight: 500;
-    margin-top: 5px;
+    margin: 5px;
 }
 
 #projects {
@@ -134,7 +140,7 @@ nav {
 .project-card {
     height: 600px;
     padding: 15px;
-    margin: 35px 15%;
+    margin: 0 15%;
     display: flex;
     justify-content: center;
 }
@@ -190,7 +196,7 @@ nav {
         height: 600px;
         display: flex;
         flex-direction: column;
-        margin: 150px 5%;
+        margin: 50px 5%;
     }
 
     .project-card img {
@@ -213,9 +219,16 @@ nav {
 
 #soon {
     background-image: linear-gradient(to bottom, var(--black), var(--blue));
-    font-size: 30px;
+    margin-top: 20px;
+    font-size: 3vh;
     padding: 50px;
     text-align: center;
+}
+
+@media(orientation: portrait) {
+    #soon {
+        font-size: 2.5vh
+    }
 }
 
 #contact {
