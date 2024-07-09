@@ -138,7 +138,7 @@ nav {
 }
 
 .project-card {
-    height: 600px;
+    height: min(50vw, 600px);
     padding: 15px;
     margin: 0 15%;
     display: flex;
@@ -166,7 +166,7 @@ nav {
 .project-card-details p {
     padding: 10% 5%;
     text-align: left;
-    font-size: 1vw;
+    font-size: min(1vw, 25px);
 }
 
 .project-card-details a {
@@ -191,10 +191,10 @@ nav {
 
 @media(orientation: portrait) {
     .project-card {
-        height: 600px;
+        height: min(100%, 600px);
         display: flex;
         flex-direction: column;
-        margin: 20vw 5%;
+        margin: 15px 5%;
         padding: 0;
     }
 
